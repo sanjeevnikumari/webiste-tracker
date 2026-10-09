@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Tracker</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 14px;
+      font-family: Arial, sans-serif;
+      color: #222;
+    }
+
+    h2, h3 { margin-bottom: 8px; }
+
+    #current {
+      background: #eef5ff;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    #history {
+      padding: 0;
+      list-style: none;
+    }
+
+    #history li {
+      padding: 9px 0;
+      border-bottom: 1px solid #ddd;
+      overflow-wrap: anywhere;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tab Tracker</h2>
+
+  <h3>Current website</h3>
+  <div id="current">Loading...</div>
+
+  <h3>Recent tab switches</h3>
+  <ul id="history"></ul>
+  
+<h3>Time spent per website</h3>
+<ul id="totals"></ul>
+
+  
+<script src="popup.js"></script>
+</body>
+</html>
